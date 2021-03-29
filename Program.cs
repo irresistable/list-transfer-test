@@ -9,6 +9,7 @@ namespace list_transfer_test
         {
             var list = new List<int>(); //требует вызова System.Collections.Generic
             //AddNumbers numbers = new AddNumbers(list);
+            //
             foreach (var item in list)
             {
                 Console.WriteLine(item);
