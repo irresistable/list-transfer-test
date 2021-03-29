@@ -8,14 +8,14 @@ namespace list_transfer_test
         static void Main(string[] args)
         {
             var list = new List<int>(); //требует вызова System.Collections.Generic
-            AddNumbers(list);
+            //AddNumbers numbers = new AddNumbers(list);
             foreach (var item in list)
             {
                 Console.WriteLine(item);
             }
 
         }
-        public static void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
+        public void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
         {
             numbers.Add(1);
             numbers.Add(5);
