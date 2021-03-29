@@ -15,7 +15,7 @@ namespace list_transfer_test
             }
 
         }
-        static void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
+        public static void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
         {
             numbers.Add(1);
             numbers.Add(5);
