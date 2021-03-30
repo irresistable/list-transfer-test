@@ -6,7 +6,7 @@ namespace list_transfer_test
     
     //Делать все в рамках одного класса - не верно, так получается путаница что ты
     //дергаешь один метод из другого
-    class Program: Program.AddAbstractClass
+    class Program
     {
         static void Main(string[] args)
         {
