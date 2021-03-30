@@ -6,7 +6,7 @@ namespace list_transfer_test
     
     //Делать все в рамках одного класса - не верно, так получается путаница что ты
     //дергаешь один метод из другого
-    class Program: Program.AddAbstractClass
+    class Program: AddAbstractClass
     {
         static void Main(string[] args)
         {
@@ -18,9 +18,6 @@ namespace list_transfer_test
             {
                 Console.WriteLine(item);
             }
-            
-            
-
         }
         static void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
         {
@@ -28,24 +25,24 @@ namespace list_transfer_test
             numbers.Add(5);
             numbers.Add(10);
         }
-        public class AddClass
-        {
-            public void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
-            {
-                numbers.Add(1);
-                numbers.Add(5);
-                numbers.Add(10);
-            }
-        }
-        public abstract class AddAbstractClass
-        {
-            public static void AddNumbers2(List<int> numbers) // делаем метод, принимающий лист интов 
-            {
-                numbers.Add(1);
-                numbers.Add(5);
-                numbers.Add(10);
-            }
-        }
+    }
+    
+public class AddClass
+{
+    public void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
+    {
+        numbers.Add(1);
+        numbers.Add(5);
+        numbers.Add(10);
+    }
+}
 
+public abstract class AddAbstractClass
+{
+    public static void AddNumbers2(List<int> numbers) // делаем метод, принимающий лист интов 
+    {
+        numbers.Add(1);
+        numbers.Add(5);
+        numbers.Add(10);
     }
 }
