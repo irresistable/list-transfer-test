@@ -6,19 +6,20 @@ namespace list_transfer_test
     
     //Делать все в рамках одного класса - не верно, так получается путаница что ты
     //дергаешь один метод из другого
-    class Program
+    class Program: Program.AddAbstractClass
     {
         static void Main(string[] args)
         {
             var list = new List<int>(); //требует вызова System.Collections.Generic
-            AddNumbers(list);
-            AddClass addclass = new AddClass();
+            AddNumbers2(list);
+            //AddClass addclass = new AddClass();
             //AddAbstractClass. ?
-            addclass.AddNumbers(list);
             foreach (var item in list)
             {
                 Console.WriteLine(item);
             }
+            
+            
 
         }
         static void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
@@ -38,7 +39,7 @@ namespace list_transfer_test
         }
         public abstract class AddAbstractClass
         {
-            public void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
+            public static void AddNumbers2(List<int> numbers) // делаем метод, принимающий лист интов 
             {
                 numbers.Add(1);
                 numbers.Add(5);
