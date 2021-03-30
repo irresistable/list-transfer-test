@@ -10,10 +10,19 @@ namespace list_transfer_test
     {
         static void Main(string[] args)
         {
+            int[] arraytest = { -4, -3, -2, -1, 0, 1, 2, 3, 4 };
+            foreach (var item in arraytest)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
             var list = new List<int>(); //требует вызова System.Collections.Generic
             AddNumbers(list);
             AddClass addclass = new AddClass();
             //AddAbstractClass. ?
+            
             addclass.AddNumbers(list);
             foreach (var item in list)
             {
@@ -38,7 +47,7 @@ namespace list_transfer_test
         }
         public abstract class AddAbstractClass
         {
-            public void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
+            public void AddNumbers2(List<int> numbers) // делаем метод, принимающий лист интов 
             {
                 numbers.Add(1);
                 numbers.Add(5);
