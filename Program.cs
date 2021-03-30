@@ -13,6 +13,7 @@ namespace list_transfer_test
             var list = new List<int>(); //требует вызова System.Collections.Generic
             AddNumbers(list);
             AddClass addclass = new AddClass();
+            //AddAbstractClass. ?
             addclass.AddNumbers(list);
             foreach (var item in list)
             {
@@ -35,7 +36,15 @@ namespace list_transfer_test
                 numbers.Add(10);
             }
         }
-
+        public abstract class AddAbstractClass
+        {
+            public void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
+            {
+                numbers.Add(1);
+                numbers.Add(5);
+                numbers.Add(10);
+            }
+        }
 
     }
 }
