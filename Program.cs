@@ -28,6 +28,7 @@ namespace list_transfer_test
             }
             
             
+            
 
         }
         static void AddNumbers(List<int> numbers) // делаем метод, принимающий лист интов 
